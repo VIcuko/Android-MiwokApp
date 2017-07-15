@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MiwokApp.iml" filepath="$PROJECT_DIR$/MiwokApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ud839_Miwok/app/src/main/main.iml" filepath="$PROJECT_DIR$/ud839_Miwok/app/src/main/main.iml" />
     </modules>
   </component>
 </project>
