@@ -52,5 +52,6 @@ public class NumbersActivity extends AppCompatActivity {
 
             rootView.addView(wordView);
         }
+
     }
 }
