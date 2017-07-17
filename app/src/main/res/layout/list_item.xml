@@ -17,7 +17,7 @@
         tools:text="miwok text"/>
 
     <TextView
-        android:id="@+id/translation_en"
+        android:id="@+id/default_text"
         android:layout_below="@id/miwok_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
