@@ -12,7 +12,7 @@ public class Word {
 
     private String mDefaultTranslation;
 
-    public Word(String defaultTranslation, String miWokTranslation){
+    public Word(String defaultTranslation, String miWokTranslation) {
         mMiWokTranslation = miWokTranslation;
         mDefaultTranslation = defaultTranslation;
     }
@@ -20,14 +20,14 @@ public class Word {
     /**
      * Method to retrieve the default word for this Word pair.
      */
-    public String getDefautltTranslation(){
+    public String getDefautltTranslation() {
         return mDefaultTranslation;
     }
 
     /**
      * Method to retrieve the miwok word for this Word pair.
      */
-    public String getMiWokTranslation(){
+    public String getMiWokTranslation() {
         return mMiWokTranslation;
     }
 

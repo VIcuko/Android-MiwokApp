@@ -21,19 +21,17 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-import static com.example.android.miwok.R.layout.activity_numbers;
-
 public class NumbersActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(activity_numbers);
+        setContentView(R.layout.activity_numbers);
 
         //Create an ArrayList of words
         ArrayList<Word> words = new ArrayList<Word>();
 
-        words.add(new Word("one","lutti"));
+        words.add(new Word("one", "lutti"));
         words.add(new Word("two", "otiiko"));
         words.add(new Word("three", "tolookosu"));
         words.add(new Word("four", "oyyisa"));
