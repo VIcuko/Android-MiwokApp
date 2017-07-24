@@ -12,12 +12,12 @@ public class Word {
 
     private String mDefaultTranslation;
 
-    private int mResourceId;
+    private int mImageResourceId;
 
-    public Word(String defaultTranslation, String miWokTranslation, int resourceId) {
+    public Word(String defaultTranslation, String miWokTranslation, int imageResourceId) {
         mMiWokTranslation = miWokTranslation;
         mDefaultTranslation = defaultTranslation;
-        mResourceId = resourceId;
+        mImageResourceId = imageResourceId;
     }
 
     /**
