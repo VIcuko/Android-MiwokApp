@@ -14,11 +14,17 @@ public class Word {
 
     private int mImageResourceId;
 
+    public Word(String defaultTranslation, String miWokTranslation) {
+        mMiWokTranslation = miWokTranslation;
+        mDefaultTranslation = defaultTranslation;
+    }
+
     public Word(String defaultTranslation, String miWokTranslation, int imageResourceId) {
         mMiWokTranslation = miWokTranslation;
         mDefaultTranslation = defaultTranslation;
         mImageResourceId = imageResourceId;
     }
+
 
     /**
      * Method to retrieve the default word for this Word pair.
@@ -35,7 +41,7 @@ public class Word {
     }
 
     public int getImageResourceId(){
-        return mResourceId;
+        return mImageResourceId;
     }
 
 }
