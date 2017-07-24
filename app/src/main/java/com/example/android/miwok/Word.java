@@ -12,9 +12,12 @@ public class Word {
 
     private String mDefaultTranslation;
 
-    public Word(String defaultTranslation, String miWokTranslation) {
+    private int mResourceId;
+
+    public Word(String defaultTranslation, String miWokTranslation, int resourceId) {
         mMiWokTranslation = miWokTranslation;
         mDefaultTranslation = defaultTranslation;
+        mResourceId = resourceId;
     }
 
     /**
@@ -29,6 +32,10 @@ public class Word {
      */
     public String getMiWokTranslation() {
         return mMiWokTranslation;
+    }
+
+    public int getImageResourceId(){
+        return mResourceId;
     }
 
 }
