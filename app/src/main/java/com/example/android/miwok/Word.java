@@ -9,24 +9,23 @@ package com.example.android.miwok;
 public class Word {
 
     private String mMiWokTranslation;
-
     private String mDefaultTranslation;
-
     private int mImageResourceId = NO_IMAGE_PROVIDED;
-
     private static final int NO_IMAGE_PROVIDED = -1;
+    private int mAudioResourceId;
 
-    public Word(String defaultTranslation, String miWokTranslation) {
+    public Word(String defaultTranslation, String miWokTranslation, int audioResourceId) {
         mMiWokTranslation = miWokTranslation;
         mDefaultTranslation = defaultTranslation;
+        mAudioResourceId = audioResourceId;
     }
 
-    public Word(String defaultTranslation, String miWokTranslation, int imageResourceId) {
+    public Word(String defaultTranslation, String miWokTranslation, int imageResourceId, int audioResourceId) {
         mMiWokTranslation = miWokTranslation;
         mDefaultTranslation = defaultTranslation;
         mImageResourceId = imageResourceId;
+        mAudioResourceId = audioResourceId;
     }
-
 
     /**
      * Method to retrieve the default word for this Word pair.
@@ -54,4 +53,7 @@ public class Word {
         return mImageResourceId != NO_IMAGE_PROVIDED;
     }
 
+    public int getAudioResourceId(){
+        return mAudioResourceId;
+    }
 }
