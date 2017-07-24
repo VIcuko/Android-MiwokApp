@@ -53,29 +53,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list_item.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="list_item.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_item.xml">
           <provider editor-type-id="android-designer2">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+            <state relative-caret-position="183">
+              <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
               <folding>
                 <element signature="e#386#411#0" expanded="true" />
                 <element signature="e#442#467#0" expanded="true" />
                 <element signature="e#656#681#0" expanded="true" />
-                <element signature="e#849#882#0" expanded="true" />
-                <element signature="e#911#946#0" expanded="true" />
-                <element signature="e#974#1007#0" expanded="true" />
-                <element signature="e#1314#1333#0" expanded="true" />
-                <element signature="e#1764#1785#0" expanded="true" />
+                <element signature="e#796#829#0" expanded="true" />
+                <element signature="e#858#893#0" expanded="true" />
+                <element signature="e#921#954#0" expanded="true" />
+                <element signature="e#1261#1280#0" expanded="true" />
+                <element signature="e#1711#1732#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordAdapter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WordAdapter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/WordAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="407">
@@ -1919,8 +1919,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/PhrasesActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/ColorsActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/FamilyActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/list_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/WordAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/list_item.xml" />
       </list>
     </option>
   </component>
@@ -2407,7 +2407,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27543426" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902297" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28163773" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -2654,32 +2654,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_item.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
-          <folding>
-            <element signature="e#386#411#0" expanded="true" />
-            <element signature="e#442#467#0" expanded="true" />
-            <element signature="e#656#681#0" expanded="true" />
-            <element signature="e#849#882#0" expanded="true" />
-            <element signature="e#911#946#0" expanded="true" />
-            <element signature="e#974#1007#0" expanded="true" />
-            <element signature="e#1314#1333#0" expanded="true" />
-            <element signature="e#1764#1785#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/WordAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="407">
           <caret line="70" column="12" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_item.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+          <folding>
+            <element signature="e#386#411#0" expanded="true" />
+            <element signature="e#442#467#0" expanded="true" />
+            <element signature="e#656#681#0" expanded="true" />
+            <element signature="e#796#829#0" expanded="true" />
+            <element signature="e#858#893#0" expanded="true" />
+            <element signature="e#921#954#0" expanded="true" />
+            <element signature="e#1261#1280#0" expanded="true" />
+            <element signature="e#1711#1732#0" expanded="true" />
           </folding>
         </state>
       </provider>
