@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
+        jar="/Users/iTurbo/Google Drive/3. Developer/11. Udacity/0. Android/MiwokApp/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="43cbe207395cbc7baedac298389306c53f9d9bf3">
+        <dex dex="/Users/iTurbo/Google Drive/3. Developer/11. Udacity/0. Android/MiwokApp/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_c262b3f7a347509daeb66da1f3cba0e4c30b252f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/iTurbo/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.3.0/support-annotations-23.3.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
         <dex dex="/Users/iTurbo/Google Drive/3. Developer/11. Udacity/0. Android/MiwokApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.3.0_69b27f30cefd98f743e248a64f5d2cdcae34307f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/iTurbo/Google Drive/3. Developer/11. Udacity/0. Android/MiwokApp/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="089d51da744d640f49c2ad8779ebd8fbd9e73461">
-        <dex dex="/Users/iTurbo/Google Drive/3. Developer/11. Udacity/0. Android/MiwokApp/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_c262b3f7a347509daeb66da1f3cba0e4c30b252f/classes.dex" />
     </item>
     <item
         is-multidex="true"
