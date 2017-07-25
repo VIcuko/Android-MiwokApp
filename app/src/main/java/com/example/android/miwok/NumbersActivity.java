@@ -16,7 +16,6 @@
 package com.example.android.miwok;
 
 import android.content.Context;
-import android.media.AudioAttributes;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -27,11 +26,8 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-import static android.bluetooth.BluetoothClass.Service.AUDIO;
 import static android.media.AudioManager.AUDIOFOCUS_GAIN;
 import static android.media.AudioManager.AUDIOFOCUS_LOSS;
-import static android.media.AudioManager.AUDIOFOCUS_LOSS_TRANSIENT;
-import static android.media.AudioManager.STREAM_MUSIC;
 
 public class NumbersActivity extends AppCompatActivity {
     private MediaPlayer mMediaPlayer;
@@ -68,7 +64,7 @@ public class NumbersActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
 
-        mAudioManager = (AudioManager) Context.getSystemService(Context.AUDIO_SERVICE);
+        mAudioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
         //Create an ArrayList of words
         final ArrayList<Word> words = new ArrayList<Word>();
