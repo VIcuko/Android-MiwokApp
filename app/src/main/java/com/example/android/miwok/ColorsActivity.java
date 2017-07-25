@@ -32,27 +32,24 @@ import static android.media.AudioManager.AUDIOFOCUS_LOSS;
 public class ColorsActivity extends AppCompatActivity {
 
     private MediaPlayer mMediaPlayer;
-    private MediaPlayer.OnCompletionListener mCompletionListener = new MediaPlayer.OnCompletionListener(){
+    private MediaPlayer.OnCompletionListener mCompletionListener = new MediaPlayer.OnCompletionListener() {
         @Override
-        public void onCompletion(MediaPlayer mp){
+        public void onCompletion(MediaPlayer mp) {
             releaseMediaPlayer();
         }
     };
     private AudioManager mAudioManager;
 
     AudioManager.OnAudioFocusChangeListener mOnAudioFocusChangeListener =
-            new AudioManager.OnAudioFocusChangeListener(){
-                public void onAudioFocusChange (int focusChange){
-                    if(focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT ||
-                            focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK){
+            new AudioManager.OnAudioFocusChangeListener() {
+                public void onAudioFocusChange(int focusChange) {
+                    if (focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT ||
+                            focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK) {
                         mMediaPlayer.pause();
                         mMediaPlayer.seekTo(0);
-                    }
-                    else if (focusChange == AUDIOFOCUS_GAIN){
+                    } else if (focusChange == AUDIOFOCUS_GAIN) {
                         mMediaPlayer.start();
-                    }
-
-                    else if (focusChange == AUDIOFOCUS_LOSS){
+                    } else if (focusChange == AUDIOFOCUS_LOSS) {
                         releaseMediaPlayer();
                     }
                 }
@@ -92,9 +89,16 @@ public class ColorsActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 releaseMediaPlayer();
-                mMediaPlayer = MediaPlayer.create(ColorsActivity.this ,words.get(position).getAudioResourceId());
-                mMediaPlayer.start();
-                mMediaPlayer.setOnCompletionListener(mCompletionListener);
+
+                int result = mAudioManager.requestAudioFocus(mOnAudioFocusChangeListener,
+                        AudioManager.STREAM_MUSIC,
+                        AudioManager.AUDIOFOCUS_GAIN_TRANSIENT);
+
+                if (result == AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
+                    mMediaPlayer = MediaPlayer.create(ColorsActivity.this, words.get(position).getAudioResourceId());
+                    mMediaPlayer.start();
+                    mMediaPlayer.setOnCompletionListener(mCompletionListener);
+                }
             }
         });
     }

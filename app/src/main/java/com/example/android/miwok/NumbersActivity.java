@@ -35,31 +35,29 @@ import static android.media.AudioManager.STREAM_MUSIC;
 
 public class NumbersActivity extends AppCompatActivity {
     private MediaPlayer mMediaPlayer;
-    private MediaPlayer.OnCompletionListener mCompletionListener = new MediaPlayer.OnCompletionListener(){
+    private MediaPlayer.OnCompletionListener mCompletionListener = new MediaPlayer.OnCompletionListener() {
         @Override
-        public void onCompletion(MediaPlayer mp){
+        public void onCompletion(MediaPlayer mp) {
             releaseMediaPlayer();
         }
     };
     private AudioManager mAudioManager;
 
     AudioManager.OnAudioFocusChangeListener mOnAudioFocusChangeListener =
-            new AudioManager.OnAudioFocusChangeListener(){
-                public void onAudioFocusChange (int focusChange){
-                    if(focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT ||
-                            focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK){
+            new AudioManager.OnAudioFocusChangeListener() {
+                public void onAudioFocusChange(int focusChange) {
+                    if (focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT ||
+                            focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK) {
                         mMediaPlayer.pause();
                         mMediaPlayer.seekTo(0);
-                    }
-                    else if (focusChange == AUDIOFOCUS_GAIN){
+                    } else if (focusChange == AUDIOFOCUS_GAIN) {
                         mMediaPlayer.start();
-                    }
-
-                    else if (focusChange == AUDIOFOCUS_LOSS){
+                    } else if (focusChange == AUDIOFOCUS_LOSS) {
                         releaseMediaPlayer();
                     }
                 }
             };
+
     protected void onStop() {
         super.onStop();
         releaseMediaPlayer();
@@ -100,12 +98,11 @@ public class NumbersActivity extends AppCompatActivity {
                         AudioManager.STREAM_MUSIC,
                         AudioManager.AUDIOFOCUS_GAIN_TRANSIENT);
 
-                if (result == AudioManager.AUDIOFOCUS_REQUEST_GRANTED){
-                    mMediaPlayer = MediaPlayer.create(NumbersActivity.this ,words.get(position).getAudioResourceId());
+                if (result == AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
+                    mMediaPlayer = MediaPlayer.create(NumbersActivity.this, words.get(position).getAudioResourceId());
                     mMediaPlayer.start();
                     mMediaPlayer.setOnCompletionListener(mCompletionListener);
                 }
-
 
 
             }
